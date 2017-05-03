@@ -14,8 +14,10 @@ public class A7Q4 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        // new scanner that's used to get the user's input in principle amount, interest rate, and years
         Scanner input = new Scanner(System.in);
         
+        // the user is asked for the Principle amount, the Interest rate, and the number of years then the values given are stored to be used in the method
         System.out.println("Please enter the Principle amount: ");
         double pA = input.nextDouble();
         
@@ -25,9 +27,9 @@ public class A7Q4 {
         System.out.println("Please enter the number of years");
         int year = input.nextInt();
         
-        
         // the function method is then used with the principle amount, interest rate, and years compounded yearly
         double filler = compoundInterest(pA, iR, year);
+        
         // it's then printed
         System.out.println(filler);
     }
